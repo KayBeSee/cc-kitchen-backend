@@ -18,8 +18,7 @@ import { enumerate, getXPub, signtx } from './utils/other-commands';
 app.get('/', (req, res) => res.send('Hello World!'))
 
 app.get('/enumerate', async (req, res) => {
-  const response = await enumerate();
-  console.log('response: ', response);
+  const devices = await enumerate();
   return res.json(devices);
 });
 
