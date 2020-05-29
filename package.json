@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d dist",
-    "start": "npm run build && node dist/index-copy.js"
+    "start": "npm run build && node dist/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +23,7 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "googleapis": "^49.0.0",
     "regenerator-runtime": "^0.13.3",
     "unchained-bitcoin": "0.0.8"
   }
